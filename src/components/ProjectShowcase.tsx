@@ -25,8 +25,27 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "task-manager-api",
+    id: "mindcare",
     index: "01",
+    year: "2026",
+    title: "HB MindCare",
+    tagline: "Mental Wellness Support Platform",
+    description:
+      "A mental wellness platform supporting user care workflows, support requests, professional reviews, and appointment coordination.",
+    architectureDetails: [
+      "Asynchronous REST API backend built with Python and FastAPI supporting structured care workflows",
+      "Support ticket lifecycle management with secure data handling and status tracking",
+      "Relational database models for scheduling appointments, logging assessments, and managing user records",
+      "Optimized API response times and request handling for active user workflows",
+    ],
+    techStack: ["Python", "FastAPI", "REST APIs", "SQL", "Database Design"],
+    visualType: "mindcare",
+    linkUrl: "https://mindcare.healthboat.org/",
+    linkLabel: "Visit Live Website",
+  },
+  {
+    id: "task-manager-api",
+    index: "02",
     year: "2026",
     title: "Task Manager API",
     tagline: "REST API for Task Management",
@@ -45,7 +64,7 @@ const projects: Project[] = [
   },
   {
     id: "sales-forecasting",
-    index: "02",
+    index: "03",
     year: "2026",
     title: "Supermarket Sales",
     tagline: "Sales Analysis & Forecasting Dashboard",
@@ -61,25 +80,6 @@ const projects: Project[] = [
     visualType: "forecasting",
     linkUrl: "https://github.com/himanshuu9670/supermarket-sales-dashboard",
     linkLabel: "View on GitHub",
-  },
-  {
-    id: "mindcare",
-    index: "03",
-    year: "2026",
-    title: "HB MindCare",
-    tagline: "Mental Wellness Support Platform",
-    description:
-      "A mental wellness platform supporting user care workflows, support requests, professional reviews, and appointment coordination.",
-    architectureDetails: [
-      "Asynchronous REST API backend built with Python and FastAPI supporting structured care workflows",
-      "Support ticket lifecycle management with secure data handling and status tracking",
-      "Relational database models for scheduling appointments, logging assessments, and managing user records",
-      "Optimized API response times and request handling for active user workflows",
-    ],
-    techStack: ["Python", "FastAPI", "REST APIs", "SQL", "Database Design"],
-    visualType: "mindcare",
-    linkUrl: "https://mindcare.healthboat.org/",
-    linkLabel: "Visit Live Website",
   },
   {
     id: "healthboat-ai",

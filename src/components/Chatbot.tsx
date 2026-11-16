@@ -34,8 +34,8 @@ const INITIAL_MESSAGES: Message[] = [
     text: "Hello! I am Himanshu's portfolio assistant. Feel free to ask about his software projects, backend engineering experience, technical skills, or how to get in touch.",
     timestamp: "Now",
     links: [
-      { label: "Task Manager API", url: "https://github.com/himanshuu9670/task-manager-api" },
       { label: "HB MindCare (Live)", url: "https://mindcare.healthboat.org/" },
+      { label: "Task Manager API", url: "https://github.com/himanshuu9670/task-manager-api" },
       { label: "Supermarket Sales", url: "https://github.com/himanshuu9670/supermarket-sales-dashboard" },
     ],
   },
@@ -97,11 +97,11 @@ function generatePreciseResponse(query: string): { text: string; links?: { label
     }
 
     return {
-      text: `Himanshu has developed **4 primary software projects**:\n\n1. **Task Manager API:** REST API built with Java, Spring Boot, Spring Data JPA, and MySQL.\n2. **Supermarket Sales Dashboard:** Sales forecasting and inventory planning tool with Python, Streamlit, and Prophet.\n3. **HB MindCare:** Mental health support and appointment coordination platform with FastAPI.\n4. **Healthboat AI:** Multi-site RAG chatbot platform with deterministic routing and embeddable widget.`,
+      text: `Himanshu has developed **4 primary software projects**:\n\n1. **HB MindCare:** Mental health support and appointment coordination platform with FastAPI.\n2. **Task Manager API:** REST API built with Java, Spring Boot, Spring Data JPA, and MySQL.\n3. **Supermarket Sales Dashboard:** Sales forecasting and inventory planning tool with Python, Streamlit, and Prophet.\n4. **Healthboat AI:** Healthcare chatbot and knowledge retrieval platform with RAG and deterministic routing.`,
       links: [
+        { label: "HB MindCare Live ↗", url: "https://mindcare.healthboat.org/" },
         { label: "Task Manager on GitHub ↗", url: "https://github.com/himanshuu9670/task-manager-api" },
         { label: "Supermarket Sales on GitHub ↗", url: "https://github.com/himanshuu9670/supermarket-sales-dashboard" },
-        { label: "HB MindCare Live ↗", url: "https://mindcare.healthboat.org/" },
       ],
     };
   }
@@ -327,12 +327,7 @@ export default function Chatbot() {
           data-cursor-label={isOpen ? "CLOSE" : "CHAT"}
         >
           {/* Continuous Looping 3D Motion Blue Gecko Mascot */}
-          <div className="block sm:hidden">
-            <ChatbotLogo3D size={68} />
-          </div>
-          <div className="hidden sm:block">
-            <ChatbotLogo3D size={92} />
-          </div>
+          <ChatbotLogo3D />
         </button>
       </div>
 

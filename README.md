@@ -17,20 +17,20 @@ Interactive 3D portfolio of **Himanshu Vishwakarma**, a Software Engineer focuse
 
 ## 🚀 Key Projects
 
-1. **Task Manager API**
+1. **HB MindCare**
+   - Mental wellness care coordination platform supporting user care workflows, support requests, and appointment coordination.
+   - **Tech:** Python, FastAPI, REST APIs, SQL, Database Design.
+   - **Live:** [mindcare.healthboat.org](https://mindcare.healthboat.org/)
+
+2. **Task Manager API**
    - REST API for managing tasks with CRUD operations, database integration, and centralized exception handling.
    - **Tech:** Java, Spring Boot, Spring Data JPA, MySQL, JUnit 5, Mockito.
    - **Repo:** [task-manager-api](https://github.com/himanshuu9670/task-manager-api)
 
-2. **Supermarket Sales Analysis & Forecasting**
+3. **Supermarket Sales Analysis & Forecasting**
    - Interactive data analytics and time-series demand forecasting application to support inventory planning.
    - **Tech:** Python, Streamlit, Pandas, NumPy, Facebook Prophet.
    - **Repo:** [supermarket-sales-dashboard](https://github.com/himanshuu9670/supermarket-sales-dashboard)
-
-3. **HB MindCare**
-   - Mental wellness care coordination platform supporting user care workflows, support requests, and appointment coordination.
-   - **Tech:** Python, FastAPI, REST APIs, SQL, Database Design.
-   - **Live:** [mindcare.healthboat.org](https://mindcare.healthboat.org/)
 
 4. **Healthboat AI**
    - Healthcare chatbot and knowledge retrieval system with fast vector search and deterministic routing.
