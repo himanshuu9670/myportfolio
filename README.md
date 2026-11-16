@@ -1,103 +1,73 @@
-# Himanshu Vishwakarma — Software Developer
+# Himanshu Vishwakarma — Software Engineer
 
-Personal portfolio for **Himanshu Vishwakarma**, a software developer focused on Java, Spring Boot, backend development, and practical AI/ML applications. It presents selected work spanning REST APIs, forecasting, and AI-assisted learning experiences.
+Interactive 3D portfolio of **Himanshu Vishwakarma**, a Software Engineer focused on backend development, REST APIs, database systems, and AI-powered applications.
 
-[Portfolio](https://himanshuu9670.github.io) · [GitHub](https://github.com/himanshuu9670) · [LinkedIn](https://www.linkedin.com/in/himanshu-vishwakarma07/) · [Email](mailto:himanshuu9670@gmail.com)
+[Live Website](https://himanshuu9670.github.io) · [GitHub](https://github.com/himanshuu9670) · [LinkedIn](https://www.linkedin.com/in/himanshu-vishwakarma07/) · [Email](mailto:himanshuu9670@gmail.com)
 
-## About
+---
 
-I build maintainable backend applications with Java, Spring Boot, REST APIs, and clear service-layer architecture. I also work with Python-based AI and machine-learning workflows to turn data, automation, and intelligent assistance into useful product capabilities.
+## 🛠️ Tech Stack & Architecture
 
-## Featured Projects
+- **Core Technologies:** Java, Spring Boot, Spring Data JPA, Python, FastAPI, MySQL, SQLite, Docker, JUnit, Mockito
+- **Frontend & 3D Interactive Graphics:** Next.js (App Router), React 19, TypeScript, Three.js, Tailwind CSS v4, Lenis Smooth Scroll
+- **Assistant Chatbot:** Embedded conversational AI assistant powered by continuous looping 3D gecko mascot
+- **Contact Pipeline:** Direct EmailJS integration with server-side API fallback
 
-### 01. Task Manager
+---
 
-A task-management REST API designed around clear resource boundaries and dependable data handling.
+## 🚀 Key Projects
 
-- **Technologies:** Java, Spring Boot, MySQL, Maven
-- **Highlights:** CRUD endpoints, validation, structured error handling, and a controller/service-layer architecture
-- **Repository:** [task-manager-api](https://github.com/himanshuu9670/task-manager-api)
+1. **Task Manager API**
+   - REST API for managing tasks with CRUD operations, database integration, and centralized exception handling.
+   - **Tech:** Java, Spring Boot, Spring Data JPA, MySQL, JUnit 5, Mockito.
+   - **Repo:** [task-manager-api](https://github.com/himanshuu9670/task-manager-api)
 
-### 02. Supermarket Sales Analysis
+2. **Supermarket Sales Analysis & Forecasting**
+   - Interactive data analytics and time-series demand forecasting application to support inventory planning.
+   - **Tech:** Python, Streamlit, Pandas, NumPy, Facebook Prophet.
+   - **Repo:** [supermarket-sales-dashboard](https://github.com/himanshuu9670/supermarket-sales-dashboard)
 
-A sales-forecasting workflow that turns supermarket sales history into planning signals for demand and inventory.
+3. **HB MindCare**
+   - Mental wellness care coordination platform supporting user care workflows, support requests, and appointment coordination.
+   - **Tech:** Python, FastAPI, REST APIs, SQL, Database Design.
+   - **Live:** [mindcare.healthboat.org](https://mindcare.healthboat.org/)
 
-- **Technologies:** Python, Pandas, Prophet, ARIMA
-- **Highlights:** data preparation, trend analysis, Prophet forecasting, and an ARIMA fallback model
-- **Repository:** [supermarket-sales-dashboard](https://github.com/himanshuu9670/supermarket-sales-dashboard)
+4. **Healthboat AI**
+   - Healthcare chatbot and knowledge retrieval system with fast vector search and deterministic routing.
+   - **Tech:** Python, FastAPI, RAG, SQLite, JavaScript.
 
-### 03. AI Tutor
+---
 
-An AI-powered learning assistant for contextual explanations and personalised learning support.
-
-- **Technologies:** Next.js, TypeScript, Python, FastAPI
-- **Highlights:** interactive tutoring, AI-assisted responses, and a Next.js interface backed by a FastAPI service layer
-- **Repository:** [ai-tutor-screener](https://github.com/himanshuu9670/ai-tutor-screener)
-
-## Technical Skills
-
-| Area | Technologies |
-| --- | --- |
-| Languages | Java, Python, SQL, C++ |
-| Backend | Spring Boot, FastAPI, REST APIs |
-| Frontend | Next.js, TypeScript, HTML, CSS |
-| AI / Data | Machine Learning, XGBoost, Pandas, NumPy, Prophet, ARIMA |
-| Databases | MySQL, MongoDB |
-| Tools / Platforms | Git, GitHub, Docker, Maven, VS Code, IntelliJ IDEA |
-
-## Portfolio Features
-
-- Responsive, dark visual design with ambient effects
-- Framer Motion interactions with reduced-motion support
-- GitHub activity data via a server-side API route
-- Downloadable resume
-- EmailJS-powered contact form
-- SEO metadata, sitemap, and robots configuration
-
-## Technical Architecture
-
-This is a Next.js 15 application using React, TypeScript, Tailwind CSS, and Framer Motion. The primary portfolio experience lives in `app/page.tsx`, with document metadata in `app/layout.tsx` and search-engine routes in `app/sitemap.ts` and `app/robots.ts`.
-
-`app/api/github/route.ts` fetches public GitHub profile and repository data with hourly revalidation and returns a safe fallback when the API is unavailable. The contact form uses `lib/emailjs.ts` and the EmailJS browser SDK; its identifiers are supplied through public environment variables.
-
-## Getting Started
+## ⚙️ Local Development
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 For a production build:
 
 ```bash
-pnpm build
-pnpm start
+npm run build
+npm run start
 ```
 
-## Environment Variables
+---
 
-Create your local configuration from the provided example:
+## 📬 Contact Form Configuration (EmailJS)
 
-```bash
-Copy-Item .env.example .env.local
-```
-
-Set these values in `.env.local` using your EmailJS configuration. Do not commit real credentials.
+To configure contact form submissions, create a `.env.local` file:
 
 ```env
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=<your_emailjs_service_id>
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=<your_emailjs_template_id>
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=<your_emailjs_public_key>
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_emailjs_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
 ```
 
-The EmailJS template receives `to_email`, `from_name`, `reply_to`, `name`, `email`, `subject`, and `message` fields.
+---
 
-## Resume
+## 📄 License
 
-The downloadable resume is available at [`public/resume.pdf`](public/resume.pdf).
-
-## Contact
-
-- GitHub: [himanshuu9670](https://github.com/himanshuu9670)
-- LinkedIn: [himanshu-vishwakarma07](https://www.linkedin.com/in/himanshu-vishwakarma07/)
-- Email: [himanshuu9670@gmail.com](mailto:himanshuu9670@gmail.com)
+© 2026 Himanshu Vishwakarma. All Rights Reserved.

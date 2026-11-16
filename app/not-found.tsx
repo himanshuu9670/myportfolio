@@ -1,2 +1,0 @@
-import Link from 'next/link';
-export default function NotFound(){return <main style={{minHeight:'100vh',display:'grid',placeItems:'center',textAlign:'center'}}><div><p style={{fontFamily:'monospace',color:'#aaa'}}>404 / NOT FOUND</p><h1 style={{fontSize:'clamp(50px,10vw,120px)',margin:'10px 0'}}>Lost in the stack.</h1><Link href="/" style={{textDecoration:'underline'}}>Return home</Link></div></main>}
