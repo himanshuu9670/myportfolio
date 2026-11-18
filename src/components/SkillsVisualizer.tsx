@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { soundManager } from "@/utils/audio";
-import { Terminal, Database, Code2, Server, Wrench, Sparkles } from "lucide-react";
+import { Terminal, Database, Code2, Server, Wrench, Sparkles, CheckCircle2 } from "lucide-react";
 
 const SkillsOrbit = dynamic(() => import("@/components/3d/SkillsOrbit"), {
   ssr: false,
@@ -42,6 +42,18 @@ const categories: SkillCategory[] = [
     ],
   },
   {
+    id: "testing",
+    title: "Testing & Quality Tools",
+    icon: CheckCircle2,
+    skills: [
+      { name: "Swagger / OpenAPI", tag: "Interactive API Testing & Documentation" },
+      { name: "Application Logging", tag: "Structured Logging (SLF4J / Logback) & Debugging" },
+      { name: "Postman", tag: "REST API Endpoint Validation & Response Verification" },
+      { name: "JUnit 5", tag: "Java Unit Testing & Test Automation" },
+      { name: "Mockito", tag: "Mocking Framework & Service Layer Isolation" },
+    ],
+  },
+  {
     id: "database",
     title: "Databases",
     icon: Database,
@@ -72,9 +84,9 @@ const categories: SkillCategory[] = [
       { name: "Git", tag: "Version Control & Branching" },
       { name: "GitHub", tag: "Repository Hosting & Collaboration" },
       { name: "Maven", tag: "Build Automation & Dependencies" },
-      { name: "Postman", tag: "API Testing & Verification" },
-      { name: "VS Code", tag: "Primary Code Editor" },
       { name: "Docker", tag: "Application Containerization" },
+      { name: "VS Code", tag: "Primary Code Editor" },
+      { name: "IntelliJ IDEA", tag: "Java & Spring Boot IDE" },
     ],
   },
 ];

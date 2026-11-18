@@ -63,7 +63,7 @@ export default function Hero() {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
             <span className="break-words">AVAILABLE FOR SOFTWARE ENGINEERING &amp; BACKEND ROLES</span>
           </div>
-          <div>DELHI NCR, INDIA · 28.6139° N, 77.2090° E</div>
+          <div>HYDERABAD, INDIA · 17.3850° N, 78.4867° E</div>
         </div>
       </div>
 

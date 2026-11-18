@@ -36,9 +36,13 @@ export const metadata: Metadata = {
     "Python",
     "FastAPI",
     "REST APIs",
+    "Swagger",
+    "API Testing",
+    "Logging",
     "MySQL",
     "Docker",
     "Spring Data JPA",
+    "Hyderabad",
   ],
   authors: [{ name: "Himanshu Vishwakarma" }],
   icons: {

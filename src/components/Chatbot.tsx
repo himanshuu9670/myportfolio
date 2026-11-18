@@ -45,6 +45,7 @@ const SUGGESTIONS = [
   "What are Himanshu's key projects?",
   "Tell me about his backend experience",
   "What technologies does he work with?",
+  "What is his degree and education?",
   "How can I contact Himanshu?",
 ];
 
@@ -130,17 +131,40 @@ function generatePreciseResponse(query: string): { text: string; links?: { label
     q.includes("stack") ||
     q.includes("language") ||
     q.includes("database") ||
+    q.includes("testing") ||
+    q.includes("tester") ||
+    q.includes("swagger") ||
+    q.includes("logging") ||
     q.includes("architecture")
   ) {
     return {
-      text: `Himanshu's technical skills include:\n\n• **Languages:** Java, Python, SQL, C++, JavaScript\n• **Backend Development:** Spring Boot, Spring Data JPA, FastAPI, Flask, REST API Development\n• **Databases:** MySQL, MongoDB, SQLite\n• **AI & Machine Learning:** Pandas, NumPy, Scikit-learn, XGBoost, LangChain, RAG integrations\n• **Developer Tools:** Git, GitHub, Maven, Postman, VS Code, Docker`,
+      text: `Himanshu's technical skills include:\n\n• **Languages:** Java, Python, SQL, C++, JavaScript\n• **Backend Development:** Spring Boot, Spring Data JPA, FastAPI, Flask, REST API Architecture\n• **Testing & Quality Tools:** Swagger / OpenAPI, Application Logging (SLF4J / Logback), Postman, JUnit 5, Mockito\n• **Databases:** MySQL, MongoDB, SQLite\n• **AI & Machine Learning:** Pandas, NumPy, Scikit-learn, XGBoost, LangChain, RAG integrations\n• **Developer Tools:** Git, GitHub, Maven, Docker, VS Code, IntelliJ IDEA`,
       links: [
         { label: "View GitHub Profile ↗", url: "https://github.com/himanshuu9670/" },
       ],
     };
   }
 
-  // 4. Contact & Hiring
+  // 4. Education & Degree
+  if (
+    q.includes("education") ||
+    q.includes("degree") ||
+    q.includes("college") ||
+    q.includes("university") ||
+    q.includes("study") ||
+    q.includes("academic") ||
+    q.includes("btech")
+  ) {
+    return {
+      text: `**Academic Background & Degree:**\n\n• **Degree:** Bachelor of Technology (B.Tech) in Computer Science (Artificial Intelligence)\n• **Institution:** Pranveer Singh Institute of Technology (PSIT), Kanpur\n• **Duration:** 2022 – 2026\n• **Location:** Hyderabad, India\n• **Core Coursework:** Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks.`,
+      links: [
+        { label: "View Resume ↗", url: "/resume.pdf" },
+        { label: "LinkedIn Profile ↗", url: "https://www.linkedin.com/in/himanshu-vishwakarma07/" },
+      ],
+    };
+  }
+
+  // 5. Contact & Hiring
   if (
     q.includes("contact") ||
     q.includes("hire") ||
@@ -151,7 +175,7 @@ function generatePreciseResponse(query: string): { text: string; links?: { label
     q.includes("available")
   ) {
     return {
-      text: `Himanshu Vishwakarma is open to software engineering opportunities and backend development roles:\n\n• **Email:** himanshuu9670@gmail.com\n• **LinkedIn:** linkedin.com/in/himanshu-vishwakarma07\n• **GitHub:** github.com/himanshuu9670\n• **Location:** Delhi NCR, India (Open to Remote & Hybrid roles)`,
+      text: `Himanshu Vishwakarma is open to software engineering opportunities and backend development roles:\n\n• **Email:** himanshuu9670@gmail.com\n• **LinkedIn:** linkedin.com/in/himanshu-vishwakarma07\n• **GitHub:** github.com/himanshuu9670\n• **Location:** Hyderabad, India (Open to Relocation, Hybrid & Remote roles)`,
       links: [
         { label: "Send Email ↗", url: "mailto:himanshuu9670@gmail.com" },
         { label: "LinkedIn Profile ↗", url: "https://www.linkedin.com/in/himanshu-vishwakarma07/" },
@@ -160,7 +184,7 @@ function generatePreciseResponse(query: string): { text: string; links?: { label
     };
   }
 
-  // 5. About Himanshu
+  // 6. About Himanshu
   if (
     q.includes("who is") ||
     q.includes("himanshu") ||
@@ -169,7 +193,7 @@ function generatePreciseResponse(query: string): { text: string; links?: { label
     q.includes("background")
   ) {
     return {
-      text: `**Himanshu Vishwakarma** is a Software Engineer focused on backend development, REST APIs, database systems, and AI-powered applications.\n\nHe has worked on backend services using Java and Spring Boot, asynchronous APIs with Python and FastAPI, database design in MySQL, and enterprise application testing on Laravel ERP systems.\n\nHe is interested in building practical, reliable applications that solve real engineering challenges.`,
+      text: `**Himanshu Vishwakarma** is a Software Engineer based in Hyderabad, India, with a B.Tech in Computer Science (Artificial Intelligence) from PSIT Kanpur.\n\nHe specializes in backend development, REST APIs, database architecture, and AI-powered applications. His background includes building enterprise services with Java and Spring Boot, async APIs with Python and FastAPI, database design in MySQL, and API validation with Swagger and structured logging.\n\nHe is interested in building practical, reliable systems that solve real engineering challenges.`,
       links: [
         { label: "LinkedIn ↗", url: "https://www.linkedin.com/in/himanshu-vishwakarma07/" },
         { label: "GitHub ↗", url: "https://github.com/himanshuu9670/" },

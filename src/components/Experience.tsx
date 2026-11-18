@@ -50,7 +50,7 @@ export default function Experience() {
             <span>03 // WORK EXPERIENCE</span>
           </div>
           <div className="font-mono text-xs tracking-widest text-[#777777] uppercase mt-2 sm:mt-0">
-            DELHI NCR, INDIA · SOFTWARE ENGINEERING
+            HYDERABAD, INDIA · SOFTWARE ENGINEERING
           </div>
         </div>
 

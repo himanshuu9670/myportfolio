@@ -136,7 +136,7 @@ export default function Navigation() {
             {/* Live IST clock */}
             <div className="hidden md:flex items-center gap-2 font-mono text-[10px] tracking-widest text-[#AFAFAF] border border-white/10 px-3 py-1.5 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>{istTime || "DELHI, IN"}</span>
+              <span>{istTime || "HYDERABAD, IN"}</span>
             </div>
 
             {/* Sound Toggle */}

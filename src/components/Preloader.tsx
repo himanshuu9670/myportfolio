@@ -56,7 +56,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
           <span>HV / PORTFOLIO</span>
         </div>
-        <div>DELHI, INDIA · 28.6139° N</div>
+        <div>HYDERABAD, INDIA · 17.3850° N</div>
       </div>
 
       {/* Centerpiece Luxury Monogram */}

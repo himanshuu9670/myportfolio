@@ -33,7 +33,7 @@ export default function About() {
       icon: Code,
       title: "Testing & Code Quality",
       detail:
-        "Writing unit and integration tests with JUnit and Mockito, verifying REST API behavior with Postman, and debugging software issues.",
+        "Writing unit and integration tests with JUnit and Mockito, testing and documenting APIs with Swagger/OpenAPI and Postman, and utilizing structured logging for debugging and diagnostics.",
     },
   ];
 
@@ -71,32 +71,39 @@ export default function About() {
 
             <div className="mt-8 sm:mt-12 space-y-5 sm:space-y-6 max-w-2xl font-sans text-base sm:text-lg lg:text-xl text-[#333333] font-light leading-relaxed">
               <p>
-                I am a Software Engineer focused on backend development, REST APIs,
-                database design, and AI-powered integrations. I enjoy solving complex
-                engineering problems and building reliable software that serves real-world
-                use cases.
+                I am a Software Engineer based in Hyderabad, India, with a Bachelor of
+                Technology in Computer Science (Artificial Intelligence) from PSIT Kanpur.
+                I specialize in backend development, REST APIs, database architecture, and
+                AI integrations.
               </p>
               <p className="text-sm sm:text-base lg:text-lg text-[#555555]">
                 I have worked on backend applications, AI-powered systems, financial
                 document processing tools, and enterprise ERP software. My work involves
                 developing APIs, managing databases, integrating services, testing
-                application functionality, and resolving software issues.
+                application functionality with Swagger and Postman, analyzing logs, and resolving software issues.
               </p>
             </div>
 
             {/* Quick Metadata Matrix */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-8 sm:pt-10 mt-8 sm:mt-10 border-t border-[#111111]/15 font-mono text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 sm:pt-10 mt-8 sm:mt-10 border-t border-[#111111]/15 font-mono text-xs">
               <div>
                 <span className="block text-[#888888] tracking-widest uppercase mb-1">
                   LOCATION
                 </span>
-                <span className="text-[#111111] font-medium">India (Remote/Hybrid)</span>
+                <span className="text-[#111111] font-medium">Hyderabad, India</span>
+              </div>
+              <div>
+                <span className="block text-[#888888] tracking-widest uppercase mb-1">
+                  DEGREE
+                </span>
+                <span className="text-[#111111] font-medium">B.Tech — CSE (AI)</span>
+                <span className="block text-[#777777] text-[10px] tracking-normal font-normal">PSIT Kanpur · 2022–2026</span>
               </div>
               <div>
                 <span className="block text-[#888888] tracking-widest uppercase mb-1">
                   FOCUS
                 </span>
-                <span className="text-[#111111] font-medium">Backend &amp; Software Engineering</span>
+                <span className="text-[#111111] font-medium">Backend &amp; REST APIs</span>
               </div>
               <div>
                 <span className="block text-[#888888] tracking-widest uppercase mb-1">
